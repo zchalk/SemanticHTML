@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+    <link id="styleSheet" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Semantic HTML</h1>
+        <nav>
+            <a class="nav-link" href="index.html">semantic</a>
+            <a class="nav-link" href="nonsemantic.html">non-semantic</a>
+        </nav>
+        <button type="button" onclick="toggle()">No CSS</button>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <a href="http://www.springboardseo.com/resources/what-is/semantic-html.html#:~:text=Semantic%20HTML%20is%20the%20correct,and%20context%20of%20web%20content."><h2>What is semantic HTML?</h2></a>
+                <p>Semantic HTML is the correct use of HTML to reinforce the meaning of content on a web page, rather than merely define its appearance. Semantically correct HTML helps search engines, screen readers, and other user devices determine the significance and context of web content</p>
+                <figure>
+                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--oxQNUXvS--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/mpjv5mkzc9bc2zsns3ex.png">
+                    <figcaption>This is an image illustrating how semantic element should be organized on a webpage.</figcaption>
+                </figure>
+            </article>
+            <article>
+                <a href="https://www.thoughtco.com/why-use-semantic-html-3468271"><h2>Why Use Semantic HTML?</h2></a>
+                <p>The benefit of writing semantic HTML stems from what should be the driving goal of any web page: the desire to communicate. By adding semantic tags to your document, you provide additional information about that document, which aids in communication. Specifically, semantic tags make it clear to the browser what the meaning of a page and its content is. That clarity is also communicated with search engines, ensuring that the right pages are delivered for the right queries.</p>
+            </article>
+        </section>
+        <aside>
+            <a href="https://www.w3schools.com/html/html5_semantic_elements.asp"><h3>W3Schools Semantic HTML elements</h3></a>
+            <p class="aside-p">Want to learn more about the individual semantic elements and when they should be used? Learn more here!</p>
+        </aside>
+        
+    </main>
+
+    <footer>
+        This is the bottom of the page, thanks for scrolling!
+    </footer>
+    
+</body>
+<script type='text/javascript'>
+    function toggle() {
+        var styleSheet = document.getElementById("styleSheet")
+        if (styleSheet.href.match("style.css")) {
+            styleSheet.href = "none.css"
+        } else {
+            styleSheet.href = "style.css"
+        }
+    }
+</script>
+</html>
+
